@@ -1,4 +1,5 @@
 import './App.css';
+import Mk from './Mk';
 import React,{useState} from'react';
 import Ex from './Components/Expenses/Ex';
 import NewExp from './Components/NewExpense/NewExp';
@@ -17,6 +18,7 @@ function App() {
   }
   return (
     <div>
+      <Mk/>
       <NewExp onAddExpense={addExpenseHandler}/>
       <Ex item={expenses}/> 
     </div>
